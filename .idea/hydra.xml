@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HydraSettings">
+    <option name="hydraStorePath" value="D:\Codes\sword-offer-scala-sbt\.hydra\idea" />
+    <option name="noOfCores" value="2" />
+    <option name="projectRoot" value="D:\Codes\sword-offer-scala-sbt" />
+    <option name="sourcePartitioner" value="auto" />
+  </component>
+</project>
