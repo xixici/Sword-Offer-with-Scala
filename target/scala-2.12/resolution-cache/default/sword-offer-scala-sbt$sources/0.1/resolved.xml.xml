@@ -4,7 +4,7 @@
 		module="sword-offer-scala-sbt$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190310160459"
+		publication="20190312180038"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
