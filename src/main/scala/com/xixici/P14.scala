@@ -7,5 +7,18 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P14 {
-
+  def FindKthToTail(listNode: ListNode, k: Int): ListNode = {
+    if (listNode == null || k <= 0)
+      return null
+    var p = listNode
+    for (i <- 0 until k - 1) {
+      if (p.next != null) p = p.next else return null
+    }
+    var q = listNode
+    while (p.next != null) {
+      p = p.next
+      q = q.next
+    }
+    q
+  }
 }
