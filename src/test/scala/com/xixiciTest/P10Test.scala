@@ -11,8 +11,8 @@ import org.scalatest.FunSuite
   **/
 class P10Test extends FunSuite {
   test("P10Test") {
-    val predict = 5
-    val real = P10.RectCover(4)
-    assert(predict===real)
+    val Expected = 5
+    val Actual = P10.RectCover(4)
+    assert(Expected===Actual)
   }
 }

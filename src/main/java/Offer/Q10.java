@@ -1,7 +1,6 @@
 package Offer;
 
 public class Q10 {
-	//跳台阶一样的代码 . 实质也是斐波那契数列问题
 	public int RectCover(int target) {
 		int a = 1, b = 2, v = 0;
 		if (target == 1) {

@@ -11,8 +11,8 @@ import org.scalatest.FunSuite
   **/
 class P8Test extends FunSuite {
   test("P8Test") {
-    val predict = 5
-    val real = P8.Jump(4)
-    assert(predict===real)
+    val Expected = 5
+    val Actual = P8.Jump(4)
+    assert(Expected===Actual)
   }
 }

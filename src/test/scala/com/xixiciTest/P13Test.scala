@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P11
+import com.xixici.P13
 import org.scalatest.FunSuite
 
 /**
@@ -9,10 +9,10 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P11Test extends FunSuite {
-  test("P11Test") {
-    val Expected = 1
-    val Actual = P11.NumberOf1(4)
-    assert(Expected===Actual)
+class P13Test extends FunSuite {
+  test("P13Test") {
+    val Expected = Array(1, 3, 5, 2, 4, 8)
+    val Actual = P13.reOrderArray(Array(1, 2, 3, 4, 5, 8))
+    assert(Actual === Expected)
   }
 }
