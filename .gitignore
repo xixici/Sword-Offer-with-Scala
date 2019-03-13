@@ -9,7 +9,12 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-.idea
+
+# Filter DIR
+.idea/*
+target/* 
+project/* 
+
 
 # Package Files #
 *.jar
