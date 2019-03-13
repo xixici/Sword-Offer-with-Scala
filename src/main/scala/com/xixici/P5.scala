@@ -7,31 +7,24 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P5 {
-  def minNumberInRotateArray(array: Array[Int]) = {
-    var res = 0
-    if (array.length < 1) {
 
-    }
-    else {
-      var left = 0
-      var right = array.length - 1
-      var middle = -1
-      while (array(left) >= array(right) && middle != right) {
-        if ((right - left) == 1) {
-          middle = right
-        } else{
-          middle = left + (right - left) / 2
-          if (array(middle) >= array(left)) {
-            left = middle
-          }
-          if (array(middle) <= array(right)) {
-            right = middle
-          }
-        }
-      }
-      res = array(middle)
-    }
-    res
-    //array.min
+  val stack1 = new scala.collection.mutable.Stack[Int]
+  val stack2 = new scala.collection.mutable.Stack[Int]
+
+  def push(a: Int) = {
+    stack1.push(a)
   }
+
+  def pop() = {
+    if (stack2.isEmpty) {
+      while (!stack1.isEmpty) {
+        stack2.push(stack1.pop())
+      }
+    }
+    if (stack2.isEmpty) {
+      throw new Exception("delete error, queue is empty.")
+    }
+    stack2.pop()
+  }
+
 }

@@ -1,5 +1,6 @@
 package com.xixiciTest
 
+import com.xixici.P7
 import org.scalatest.FunSuite
 
 /**
@@ -10,7 +11,9 @@ import org.scalatest.FunSuite
   **/
 class P7Test extends FunSuite {
   test("P7Test") {
-
+    val dd = 2
+    val res = P7.Fibonacci(3)
+    assert(res === dd)
   }
 }
 

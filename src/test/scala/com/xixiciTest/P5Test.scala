@@ -10,9 +10,15 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P5Test extends FunSuite {
-  test("P5Test") {
-    val dd = Array(3,4,5,1,2)
-    val res = P5.minNumberInRotateArray(dd)
-    assert(res === 1)
+
+  test("testPush") {
+    P5.push(1)
+    P5.push(2)
+    P5.push(3)
+    assert(List(P5.pop(), P5.pop(), P5.pop()) === List(1, 2, 3))
+  }
+
+  test("testPop") {
+    assertThrows[Exception](P5.pop())
   }
 }

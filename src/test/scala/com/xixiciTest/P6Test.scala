@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P5
+import com.xixici.{ P6}
 import org.scalatest.FunSuite
 
 /**
@@ -10,9 +10,10 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P6Test extends FunSuite{
-  test("P6Test") {
+
+  test("P5Test") {
     val dd = Array(3,4,5,1,2)
-    val res = P5.minNumberInRotateArray(dd)
+    val res = P6.minNumberInRotateArray(dd)
     assert(res === 1)
   }
 }
