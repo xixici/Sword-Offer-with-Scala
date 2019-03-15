@@ -1,4 +1,4 @@
-<h1 align="center">Scala版本剑指Offer</h1><div align="right">语言: <a title="英语" href="README.en.md">英文 </a>中文</div>
+<h1 align="center">Scala版本剑指Offer</h1><div align="right">Language: <a title="English" href="README.en.md">English </a></div>
 
 # 仓库详情
 
@@ -819,8 +819,9 @@
 </tr>
 </tbody>
 </table>  
-
-
+----------------------
 ## 贡献你的代码
 
-| 欢迎你贡献出你的一份力量，你可以随时提交 issue 或 fork 本仓库。静候你的 pull request。
+欢迎你贡献出你的一份力量，你可以随时提交 issue 或 fork 本仓库。静候你的 pull request。
+
+* + -  

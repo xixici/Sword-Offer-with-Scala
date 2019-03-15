@@ -1,8 +1,7 @@
 <h1 align="center">Sword Offer with Scala</h1>
 
-<div align="right">Language: <a title="CN" href="README.md">CN</a>
-EN
-</div>
+<div align="right">语言: <a title="CN" href="README.md">中文</a></div>
+
 
 # Details
 
