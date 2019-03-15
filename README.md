@@ -3,8 +3,13 @@
 # 仓库详情
 
 - Java版剑指OFFER 
-  - [x] 01-20题- Scala 版本剑指Offer  - [x] 01-20题 2019-03-14完成
+  - [x] 01-20题
+
+- Scala 版本剑指Offer 
+  - [x] 01-20题 `2019-03-14`完成
+
   - [ ] 20-40题
+
   - [ ] 40-66题
 
  # Scala 题目 - [牛客网题目](https://www.nowcoder.com/ta/coding-interviews)
