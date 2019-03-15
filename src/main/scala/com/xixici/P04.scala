@@ -6,7 +6,7 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P4 {
+object P04 {
   def reConstructBinaryTree(pre: Array[Int], in: Array[Int]): TreeNode = {
     if (pre == null || in == null || pre.length <= 0 || in.length <= 0) {
 

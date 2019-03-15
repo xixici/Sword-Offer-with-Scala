@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P8
+import com.xixici.P09
 import org.scalatest.FunSuite
 
 /**
@@ -9,10 +9,10 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P8Test extends FunSuite {
-  test("P8Test") {
-    val Expected = 5
-    val Actual = P8.Jump(4)
+class P09Test extends FunSuite {
+  test("P9Test") {
+    val Expected = 8
+    val Actual = P09.Jump2(4)
     assert(Expected===Actual)
   }
 }

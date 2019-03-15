@@ -6,7 +6,7 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P2 {
+object P02 {
   def replaceSpace( str: String) =  {
     str.replace(" ", "%20")
   }

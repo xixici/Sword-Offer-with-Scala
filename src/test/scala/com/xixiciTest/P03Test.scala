@@ -2,7 +2,7 @@ package com.xixiciTest
 
 import java.util
 
-import com.xixici.{ListNode, P3}
+import com.xixici.{ListNode, P03}
 import org.scalatest.FunSuite
 import scala.collection.JavaConverters._
 
@@ -12,7 +12,7 @@ import scala.collection.JavaConverters._
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P3Test extends FunSuite{
+class P03Test extends FunSuite{
   var head = new ListNode(1)
   val a = new ListNode(2)
   val b = new ListNode(3)
@@ -22,7 +22,7 @@ class P3Test extends FunSuite{
   b.next = c
   c.next = null
   test("P3Test") {
-    val nodes = P3.printListFromTailToHead(head)
+    val nodes = P03.printListFromTailToHead(head)
     assert(nodes.asScala === List(c, b, a, head))
   }
 }

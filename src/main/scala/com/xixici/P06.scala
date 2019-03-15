@@ -6,7 +6,7 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P6 {
+object P06 {
 
   def minNumberInRotateArray(array: Array[Int]) = {
     var res = 0

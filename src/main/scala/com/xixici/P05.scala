@@ -6,7 +6,7 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P5 {
+object P05 {
 
   val stack1 = new scala.collection.mutable.Stack[Int]
   val stack2 = new scala.collection.mutable.Stack[Int]

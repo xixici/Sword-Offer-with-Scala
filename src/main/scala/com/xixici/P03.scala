@@ -8,7 +8,7 @@ import java.util
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P3 {
+object P03 {
   def printListFromTailToHead(head: ListNode): util.ArrayList[ListNode] = {
     if (head == null) {
 

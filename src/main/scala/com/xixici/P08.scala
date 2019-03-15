@@ -6,14 +6,15 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P9 {
-  def Jump2(n: Int): Int = {
+object P08 {
+  def Jump(n: Int): Int = {
     if (n == 1) {
       return 1
     }
     if (n == 2) {
       return 2
     }
-    2 * Jump2(n - 1)
+
+    Jump(n - 1) + Jump(n - 2)
   }
 }

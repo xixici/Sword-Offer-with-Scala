@@ -6,7 +6,7 @@ package com.xixici
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-object P1 {
+object P01 {
   def find(target: Int, array: Array[Array[Int]]) = {
     val arrayLen = array.length
     var res = false

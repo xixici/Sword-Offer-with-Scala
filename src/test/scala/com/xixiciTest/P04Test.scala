@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.{TreeNode, P4}
+import com.xixici.{TreeNode, P04}
 import org.scalatest.{BeforeAndAfterEach, FunSuite}
 
 import scala.collection.JavaConverters._
@@ -11,7 +11,7 @@ import scala.collection.JavaConverters._
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P4Test extends FunSuite with BeforeAndAfterEach{
+class P04Test extends FunSuite with BeforeAndAfterEach{
 
   var pre: Array[Int] = _
   var in: Array[Int] = _
@@ -27,8 +27,8 @@ class P4Test extends FunSuite with BeforeAndAfterEach{
   }
 
   test("testConstructBTree") {
-    assert(P4.reConstructBinaryTree(pre, in).data === 1)
-    assert(P4.reConstructBinaryTree(pre, in).left.data === 2)
-    assert(P4.reConstructBinaryTree(pre, in).right.data === 3)
+    assert(P04.reConstructBinaryTree(pre, in).data === 1)
+    assert(P04.reConstructBinaryTree(pre, in).left.data === 2)
+    assert(P04.reConstructBinaryTree(pre, in).right.data === 3)
   }
 }
