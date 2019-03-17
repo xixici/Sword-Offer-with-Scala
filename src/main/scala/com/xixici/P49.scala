@@ -11,8 +11,19 @@ object P49 {
     if (str.length == 0) {
       return 0
     }
-    val numList = Array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-')
+    var sum = 0
+    var label = 1
+    if (str.charAt(0) == '+') label = 1
+    if (str.charAt(0) == '-') label = -1
 
-    0
+    for (s <- str) {
+      if (s > '9' || s < '0') {
+        sum = 0
+      }
+      else {
+        sum = sum * 10 + s - '0'
+      }
+    }
+    label * sum
   }
 }
