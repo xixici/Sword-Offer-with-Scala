@@ -14,6 +14,12 @@
 
   - [ ] 其他
 
+
+# 特性
+  - 数据类型均采用`scala`原生组件, 避免使用`java`类型
+  - 包含简易的`ScalaTest` 单元测试模块
+  - 项目基于`SBT`构建
+
  # Scala 题目 - [牛客网题目](https://www.nowcoder.com/ta/coding-interviews)
 
   <table>

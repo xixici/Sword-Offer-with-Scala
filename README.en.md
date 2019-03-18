@@ -11,8 +11,21 @@
 - Sword Offer with Scala
 
   - [x] Problem 01-20  Done at `2019-03-14`
-  - [ ] Problem 20-40
-  - [ ] Problem 40-66
+
+  - [x] Problem 20-24  Done at `2019-03-16`
+  
+  - [x] Problem 47-51  Done at `2019-03-18`
+
+  - [ ] Other
+
+
+# Features
+
+- Scala data types all use `Scala` native components to avoid using `java`
+
+- Contains a simple `ScalaTest` unit test module
+
+- Project Construction Based on  `SBT`
 
 - [Link in Nowcoder.com](https://www.nowcoder.com/ta/coding-interviews)
 
