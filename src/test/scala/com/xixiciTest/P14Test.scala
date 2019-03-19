@@ -1,6 +1,7 @@
 package com.xixiciTest
 
-import com.xixici.{ListNode, P14}
+import com.xixici.P14
+import com.xixici.util.ListNode
 import org.scalatest.FunSuite
 
 /**

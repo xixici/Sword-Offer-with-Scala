@@ -2,8 +2,10 @@ package com.xixiciTest
 
 import java.util
 
-import com.xixici.{ListNode, P03}
+import com.xixici.P03
+import com.xixici.util.ListNode
 import org.scalatest.FunSuite
+
 import scala.collection.JavaConverters._
 
 /**
@@ -23,6 +25,6 @@ class P03Test extends FunSuite{
   c.next = null
   test("P3Test") {
     val nodes = P03.printListFromTailToHead(head)
-    assert(nodes.asScala === List(c, b, a, head))
+    assert(nodes === List(c, b, a, head))
   }
 }

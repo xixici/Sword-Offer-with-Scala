@@ -1,6 +1,7 @@
 package com.xixiciTest
 
-import com.xixici.{ListNode, P16}
+import com.xixici.P16
+import com.xixici.util.ListNode
 import org.scalatest.FunSuite
 
 import scala.collection.mutable.ArrayBuffer

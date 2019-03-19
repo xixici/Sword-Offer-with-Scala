@@ -1,6 +1,7 @@
 package com.xixici
 
-import java.util
+
+import com.xixici.util.ListNode
 
 /**
   * Created by xixici
@@ -9,20 +10,20 @@ import java.util
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P03 {
-  def printListFromTailToHead(head: ListNode): util.ArrayList[ListNode] = {
+  def printListFromTailToHead(head: ListNode): collection.immutable.List[ListNode] = {
     if (head == null) {
 
     }
-    val list = new java.util.ArrayList[ListNode]()
-    val stack = new java.util.Stack[ListNode]()
+    val list = new collection.mutable.ListBuffer[ListNode]()
+    val stack = collection.mutable.ArrayStack[ListNode]()
     var _head = head
     while (_head != null) {
       stack.push(_head)
       _head = _head.next
     }
     while (!stack.isEmpty) {
-      list.add(stack.pop())
+      list.append(stack.pop())
     }
-    list
+    list.toList
   }
 }

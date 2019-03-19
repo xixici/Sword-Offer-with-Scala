@@ -1,4 +1,4 @@
-package com.xixici
+package com.xixici.util
 
 /**
   * Created by xixici

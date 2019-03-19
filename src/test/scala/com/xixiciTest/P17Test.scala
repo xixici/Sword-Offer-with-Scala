@@ -1,6 +1,7 @@
 package com.xixiciTest
 
-import com.xixici.{P17, TreeNode}
+import com.xixici.P17
+import com.xixici.util.TreeNode
 import org.scalatest.FunSuite
 
 /**

@@ -1,6 +1,7 @@
 package com.xixiciTest
 
-import com.xixici.{P18, TreeNode}
+import com.xixici.P18
+import com.xixici.util.TreeNode
 import org.scalatest.FunSuite
 
 import scala.collection.mutable

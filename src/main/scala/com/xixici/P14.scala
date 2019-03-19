@@ -1,5 +1,7 @@
 package com.xixici
 
+import com.xixici.util.ListNode
+
 /**
   * Created by xixici
   * Date: 2019/3/13 

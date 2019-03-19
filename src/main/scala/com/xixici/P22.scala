@@ -1,5 +1,7 @@
 package com.xixici
 
+import com.xixici.util.TreeNode
+
 import scala.collection.mutable
 
 /**

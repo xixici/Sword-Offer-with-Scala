@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.{TreeNode, P04}
+import com.xixici.P04
 import org.scalatest.{BeforeAndAfterEach, FunSuite}
 
 import scala.collection.JavaConverters._
