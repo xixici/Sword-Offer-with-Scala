@@ -2,8 +2,6 @@ package com.xixici
 
 import com.xixici.util.TreeNode
 
-import scala.collection.mutable
-
 /**
   * Created by xixici
   * Date: 2019/3/19 
@@ -11,19 +9,30 @@ import scala.collection.mutable
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P26 {
-  def Convert(pRootOfTree: TreeNode): List[Int] = {
-    if (pRootOfTree == null) return null
-    val resultList = mutable.ListBuffer[Int]()
-    val treeStack = mutable.ArrayStack[TreeNode]()
-    treeStack.push(pRootOfTree)
-    while(!treeStack.isEmpty) {
-      val tempNode = treeStack.pop()
-      if (tempNode != null) {
-        resultList += tempNode.data
-        treeStack.push(tempNode.right)
-        treeStack.push(tempNode.left)
-      }
+  var preNode: TreeNode = _
+
+  def Convert(root: TreeNode): TreeNode = {
+    if (root == null) return null
+    convertNode(root)
+    if (preNode == null) return null
+    while (preNode.left != null) {
+      preNode = preNode.left
     }
-    resultList.toList
+    preNode
+  }
+
+  def convertNode(current: TreeNode): Unit = {
+    if (current == null) return
+    if (current.left != null) {
+      convertNode(current.left)
+    }
+    current.left = preNode
+    if (preNode != null) {
+      preNode.right = current
+    }
+    preNode = current
+    if (current.right != null) {
+      convertNode(current.right)
+    }
   }
 }

@@ -11,11 +11,9 @@
 - Sword Offer with Scala
 
   - [x] Problem 01-20  Done at `2019-03-14`
-
   - [x] Problem 20-24  Done at `2019-03-16`
-  
   - [x] Problem 47-51  Done at `2019-03-18`
-
+  - [x] Problem 25-28  Done at `2019-03-20`
   - [ ] Other
 
 
