@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 public class Q15 {
 	public class ListNode {
 	    int val;

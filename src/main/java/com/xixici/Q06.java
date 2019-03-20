@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q06 {
 	public static int minNumberInRotateArray(int[] array) {

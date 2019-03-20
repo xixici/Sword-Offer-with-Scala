@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q12 {
 	public double Power(double base, int exponent) {

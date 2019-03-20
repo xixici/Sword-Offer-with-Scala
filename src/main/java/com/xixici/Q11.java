@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q11 {
 	public int NumberOf1(int n) {

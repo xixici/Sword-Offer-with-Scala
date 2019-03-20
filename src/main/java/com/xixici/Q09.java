@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q09 {
 	//2^(n-1)

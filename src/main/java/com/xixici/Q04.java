@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q04 {
 	public class TreeNode {

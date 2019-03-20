@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q13 {
 	public void reOrderArray(int[] array) {

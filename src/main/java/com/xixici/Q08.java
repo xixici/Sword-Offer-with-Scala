@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q08 {
 	public int JumpFloor(int target) {

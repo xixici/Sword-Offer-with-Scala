@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 public class Q02  {
     public String replaceSpace(StringBuffer str) {

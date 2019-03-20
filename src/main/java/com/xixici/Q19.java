@@ -1,4 +1,4 @@
-package Offer;
+package com.xixici;
 
 import java.util.ArrayList;
 
