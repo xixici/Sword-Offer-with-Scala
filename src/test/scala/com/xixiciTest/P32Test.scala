@@ -1,20 +1,18 @@
 package com.xixiciTest
 
-import com.xixici.P29
+import com.xixici.P32
 import org.scalatest.FunSuite
 
 /**
   * Created by xixici
-  * Date: 2019/3/20 
+  * Date: 2019/3/21 
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P29Test extends FunSuite {
-  val A = Array(2, 2, 2, 0, 2, 5, 3)
-  test("P29Test") {
-    val Expected = List(0, 2, 2, 2)
-    val Actual = P29.GetLeastNumbers_Solution(A, 4)
+class P32Test extends FunSuite {
+  test("P32Test") {
+    val Expected = 12
+    val Actual = P32.GetUglyNumber_Solution(10)
     assert(Actual === Expected)
   }
-
 }
