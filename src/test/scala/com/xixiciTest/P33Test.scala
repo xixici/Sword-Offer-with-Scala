@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P32
+import com.xixici.P33
 import org.scalatest.FunSuite
 
 /**
@@ -9,11 +9,10 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P32Test extends FunSuite {
-  val A = Array(3, 32, 321)
-  test("P32Test") {
-    val Expected = 321323.toString
-    val Actual = P32.PrintMinNumber(A)
+class P33Test extends FunSuite {
+  test("P33Test") {
+    val Expected = 12
+    val Actual = P33.GetUglyNumber_Solution(10)
     assert(Actual === Expected)
   }
 }

@@ -7,16 +7,23 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P32 {
-  def GetUglyNumber_Solution(index: Int) = {
-    val list = new collection.mutable.ListBuffer[Int]()
-    list.append(1)
-    var t2, t3, t5 = 0
-    for (i <- 0 until index) {
-      list.append(math.min(math.min(list(t2) * 2, list(t3) * 3), list(t5) * 5))
-      if (list(i + 1) == list(t2) * 2) t2 += 1
-      if (list(i + 1) == list(t3) * 3) t3 += 1
-      if (list(i + 1) == list(t5) * 5) t5 += 1
+  def PrintMinNumber(numbers: Array[Int]): String = {
+    var str: String = ""
+    for (i <- numbers.indices) {
+      for (j <- i + 1 until numbers.length) {
+        val a = (numbers(i) + "" + numbers(j)).toInt
+        val b = (numbers(j) + "" + numbers(i)).toInt
+        if (a > b) {
+          val t = numbers(i)
+          numbers(i) = numbers(j)
+          numbers(j) = t
+        }
+      }
     }
-    list(index - 1)
+    for (i <- numbers.indices) {
+      str += numbers(i).toString
+    }
+    str
   }
+
 }

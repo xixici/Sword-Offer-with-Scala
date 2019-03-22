@@ -2,28 +2,19 @@ package com.xixici
 
 /**
   * Created by xixici
-  * Date: 2019/3/21 
+  * Date: 2019/3/22 
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P31 {
-  def PrintMinNumber(numbers: Array[Int]): String = {
-    var str: String = ""
-    for (i <- numbers.indices) {
-      for (j <- i + 1 until numbers.length) {
-        val a = (numbers(i) + "" + numbers(j)).toInt
-        val b = (numbers(j) + "" + numbers(i)).toInt
-        if (a > b) {
-          val t = numbers(i)
-          numbers(i) = numbers(j)
-          numbers(j) = t
-        }
-      }
-    }
-    for (i <- numbers.indices) {
-      str += numbers(i).toString
-    }
-    str
-  }
 
+  def NumberOf1Between1AndN_Solution(n: Int) = {
+    var count = 0
+    var i = 1
+    while (i < n) {
+      count += (n / (i * 10)) * i + Math.min(Math.max(n % (i * 10) - i + 1, 0), i)
+      i *= 10
+    }
+    count
+  }
 }

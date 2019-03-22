@@ -9,10 +9,10 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P31Test extends FunSuite {
+class P34Test extends FunSuite {
   test("P33Test") {
-    val Expected = 8
-    val Actual = P31.NumberOf1Between1AndN_Solution(15)
-    assert(Actual === Expected)
-  }
+  val Expected = 8
+  val Actual = P31.NumberOf1Between1AndN_Solution(15)
+  assert(Actual === Expected)
+}
 }
