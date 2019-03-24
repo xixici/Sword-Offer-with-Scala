@@ -1,6 +1,7 @@
 package com.xixiciTest
 
-import com.xixici.P31
+import com.xixici.P36
+import com.xixici.util.ListNode
 import org.scalatest.FunSuite
 
 /**
@@ -10,9 +11,22 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P36Test extends FunSuite {
-  test("P33Test") {
-    val Expected = 8
-    val Actual = P31.NumberOf1Between1AndN_Solution(15)
-    assert(Actual === Expected)
+  val list1 = new ListNode(1)
+  val a = new ListNode(2)
+  val b = new ListNode(3)
+  val c = new ListNode(4)
+  list1.next = a
+  a.next = b
+  b.next = c
+  c.next = null
+  val list2 = new ListNode(1)
+  list2.next = b
+  b.next = c
+  c.next = a
+  a.next = null
+  test("P36Test") {
+    val Expected = b
+    val Actual = P36.FindFirstCommonNode(list1, list2)
+    assert(Actual.data === Expected.data)
   }
 }

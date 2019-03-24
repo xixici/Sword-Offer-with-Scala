@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P31
+import com.xixici.P34
 import org.scalatest.FunSuite
 
 /**
@@ -10,9 +10,9 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P34Test extends FunSuite {
-  test("P33Test") {
-  val Expected = 8
-  val Actual = P31.NumberOf1Between1AndN_Solution(15)
+  test("P34Test") {
+  val Expected = 4
+  val Actual = P34.FirstNotRepeatingChar("AABBeCCDD")
   assert(Actual === Expected)
 }
 }

@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P31
+import com.xixici.P35
 import org.scalatest.FunSuite
 
 /**
@@ -10,9 +10,9 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P35Test extends FunSuite {
-  test("P33Test") {
-    val Expected = 8
-    val Actual = P31.NumberOf1Between1AndN_Solution(15)
+  test("P35Test") {
+    val Expected = 7
+    val Actual = P35.InversePairs(Array(1, 2, 3, 4, 5, 6, 7, 0))
     assert(Actual === Expected)
   }
 }

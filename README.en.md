@@ -15,6 +15,7 @@
   - [x] Problem 47-51  Done at `2019-03-18`
   - [x] Problem 25-28  Done at `2019-03-20`
   - [x] Problem 29-32  Done at `2019-03-21`
+  - [x] Problem 33-36  Done at `2019-03-24`
   - [ ] Other
 
 
@@ -28,7 +29,7 @@
 
 - [Link in Nowcoder.com](https://www.nowcoder.com/ta/coding-interviews)
 
-# Problem solved with Scala
+# Problem solved with Scala-[Link in Nowcoder.com](https://www.nowcoder.com/ta/coding-interviews)
 
 
   <table>
