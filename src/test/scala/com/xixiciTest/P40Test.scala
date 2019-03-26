@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P37
+import com.xixici.P40
 import org.scalatest.FunSuite
 
 /**
@@ -10,9 +10,10 @@ import org.scalatest.FunSuite
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class P40Test extends FunSuite {
-  test("P37Test") {
-    val Expected = 4
-    val Actual = P37.GetNumberOfK(Array(1, 2, 3, 3, 3, 3, 4, 5, 6, 7), 3)
-    assert(Expected === Actual)
+  test("P40Test") {
+    val ttt = Array(2, 2, 3, 3, 9, 9, 4, 5, 6, 6)
+    val Expected = Array(4, 5)
+    val Actual = P40.findNumsAppearOnce(ttt, Array(4), Array(5))
+    assert(Actual === Expected)
   }
 }

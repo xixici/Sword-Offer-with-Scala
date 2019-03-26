@@ -22,6 +22,6 @@ class P15Test extends FunSuite{
   test("P15Test") {
     val Expected = c.data
     val Actual = P15.ReverseList(list1).data
-    assert(Expected === Actual)
+    assert(Actual === Expected)
   }
 }

@@ -9,10 +9,31 @@ import com.xixici.util.TreeNode
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P39 {
-  def IsBalanced_Solution(root:TreeNode): Int = {
+  var isBalanced = true
 
+  def IsBalanced_Solution(root: TreeNode): Boolean = {
 
-    0
+    getDepth(root)
+    isBalanced
+
+  }
+
+  def getDepth(root: TreeNode): Int = {
+
+    if (root == null)
+      return 0
+    val left = getDepth(root.left)
+    val right = getDepth(root.right)
+
+    if (Math.abs(left - right) > 1) {
+      isBalanced = false
+    }
+    if (right > left) {
+      right + 1
+    } else {
+      left + 1
+    }
+
   }
 
 }

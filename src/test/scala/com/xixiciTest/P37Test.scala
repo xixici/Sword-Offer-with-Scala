@@ -13,6 +13,6 @@ class P37Test extends FunSuite {
   test("P37Test") {
     val Expected = 4
     val Actual = P37.GetNumberOfK(Array(1, 2, 3, 3, 3, 3, 4, 5, 6, 7), 3)
-    assert(Expected === Actual)
+    assert(Actual === Expected)
   }
 }

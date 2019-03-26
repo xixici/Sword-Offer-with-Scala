@@ -22,6 +22,6 @@ class P14Test extends FunSuite {
   test("P14Test") {
     val Expected = a.data
     val Actual = P14.FindKthToTail(list1, 3).data
-    assert(Expected === Actual)
+    assert(Actual === Expected)
   }
 }

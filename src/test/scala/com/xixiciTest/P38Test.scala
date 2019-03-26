@@ -32,6 +32,6 @@ class P38Test extends FunSuite {
   test("P38Test") {
     val Expected = 4
     val Actual = P38.TreeDepth(root1)
-    assert(Expected === Actual)
+    assert(Actual === Expected)
   }
 }
