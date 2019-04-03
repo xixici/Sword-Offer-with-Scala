@@ -11,9 +11,9 @@ import org.scalatest.FunSuite
   **/
 class P40Test extends FunSuite {
   test("P40Test") {
-    val ttt = Array(2, 2, 3, 3, 9, 9, 4, 5, 6, 6)
-    val Expected = Array(4, 5)
-    val Actual = P40.findNumsAppearOnce(ttt, Array(4), Array(5))
-    assert(Actual === Expected)
+    val ttt = Array(2, 2, 3, 3, 4, 7, 5, 5, 9, 9)
+    val Expected = Array(4, 7)
+    val Actual = P40.findNumsAppearOnce(ttt)
+    assert(Actual.sorted === Expected.sorted)
   }
 }
