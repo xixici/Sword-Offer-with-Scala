@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.{P10, P09}
+import com.xixici.P10
 import org.scalatest.FunSuite
 
 /**
@@ -13,6 +13,6 @@ class P10Test extends FunSuite {
   test("P10Test") {
     val Expected = 5
     val Actual = P10.RectCover(4)
-    assert(Expected===Actual)
+    assert(Expected === Actual)
   }
 }

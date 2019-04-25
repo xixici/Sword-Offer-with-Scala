@@ -9,8 +9,8 @@ import com.xixici.util.TreeNode
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P18 {
-  def Mirror(tree:TreeNode): TreeNode = {
-    if(tree == null) return null
+  def Mirror(tree: TreeNode): TreeNode = {
+    if (tree == null) return null
     val tmp = tree.left
     tree.left = tree.right
     tree.right = tmp

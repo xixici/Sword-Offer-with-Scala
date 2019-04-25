@@ -32,7 +32,7 @@ object P27 {
           charSet.add(chars(j))
           SwapTwo(chars, i, j)
           PermutationHelper(chars, i + 1, list)
-          SwapTwo(chars,j, i)
+          SwapTwo(chars, j, i)
         }
       }
     }

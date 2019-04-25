@@ -14,7 +14,7 @@ object P21 {
     var j = 0
     for (i <- 0 until pushA.length) {
       stackA.push(pushA(i))
-      while(!stackA.isEmpty && stackA.top == popA(j)){
+      while (!stackA.isEmpty && stackA.top == popA(j)) {
         stackA.pop()
         j += 1
       }

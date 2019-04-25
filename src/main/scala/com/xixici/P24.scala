@@ -11,6 +11,7 @@ import com.xixici.util.TreeNode
 object P24 {
   val listAll = new collection.mutable.ListBuffer[collection.immutable.List[Int]]()
   val list = new collection.mutable.ListBuffer[Int]()
+
   def findPath(root: TreeNode, targetO: Int): List[List[Int]] = {
     var target = targetO
     if (root == null) return listAll.toList

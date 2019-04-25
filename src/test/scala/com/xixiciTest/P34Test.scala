@@ -11,8 +11,8 @@ import org.scalatest.FunSuite
   **/
 class P34Test extends FunSuite {
   test("P34Test") {
-  val Expected = 4
-  val Actual = P34.FirstNotRepeatingChar("AABBeCCDD")
-  assert(Actual === Expected)
-}
+    val Expected = 4
+    val Actual = P34.FirstNotRepeatingChar("AABBeCCDD")
+    assert(Actual === Expected)
+  }
 }

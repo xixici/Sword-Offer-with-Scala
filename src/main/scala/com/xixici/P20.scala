@@ -9,6 +9,7 @@ package com.xixici
 class P20 {
   private val dataStack = new collection.mutable.ArrayStack[Int]
   private val minStack = new collection.mutable.ArrayStack[Int]
+
   def push(e: Int): Unit = {
     dataStack.push(e)
     if (minStack.isEmpty || e < minStack.top) {

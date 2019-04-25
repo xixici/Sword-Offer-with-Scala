@@ -3,15 +3,13 @@ package com.xixiciTest
 import com.xixici.P04
 import org.scalatest.{BeforeAndAfterEach, FunSuite}
 
-import scala.collection.JavaConverters._
-
 /**
   * Created by xixici
   * Date: 2019/3/5 
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P04Test extends FunSuite with BeforeAndAfterEach{
+class P04Test extends FunSuite with BeforeAndAfterEach {
 
   var pre: Array[Int] = _
   var in: Array[Int] = _

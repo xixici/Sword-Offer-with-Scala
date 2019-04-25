@@ -14,16 +14,16 @@ object P12 {
       res = 0
     }
     if (exponent < 0) {
-      for(i <- 1 until exponent){
+      for (i <- 1 until exponent) {
         res *= base
       }
-      res = 1/res
+      res = 1 / res
     }
-    if(exponent>0){
-      for(i <- 1 until exponent){
+    if (exponent > 0) {
+      for (i <- 1 until exponent) {
         res *= base
       }
     }
-   res
+    res
   }
 }

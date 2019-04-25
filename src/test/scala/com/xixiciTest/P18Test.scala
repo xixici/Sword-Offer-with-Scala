@@ -38,7 +38,7 @@ class P18Test extends FunSuite {
 
 
   test("P18Test") {
-    val Expected =  P18Test.preOrder(root1)
+    val Expected = P18Test.preOrder(root1)
     val Actual = P18Test.preOrder(P18.Mirror(root2))
     assert(Actual === Expected)
   }
@@ -53,7 +53,7 @@ object P18Test {
     val resultList = mutable.ListBuffer[Int]()
     val treeStack = mutable.ArrayStack[TreeNode]()
     treeStack.push(root)
-    while(!treeStack.isEmpty) {
+    while (!treeStack.isEmpty) {
       val tempNode = treeStack.pop();
       if (tempNode != null) {
         resultList += tempNode.data

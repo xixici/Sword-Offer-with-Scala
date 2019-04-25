@@ -1,7 +1,7 @@
 package com.xixiciTest
 
+import com.xixici.P15
 import com.xixici.util.ListNode
-import com.xixici.{P14, P15}
 import org.scalatest.FunSuite
 
 /**
@@ -10,7 +10,7 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P15Test extends FunSuite{
+class P15Test extends FunSuite {
   val list1 = new ListNode(1)
   val a = new ListNode(2)
   val b = new ListNode(3)

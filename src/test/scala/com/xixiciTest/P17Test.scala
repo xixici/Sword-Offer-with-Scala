@@ -12,18 +12,18 @@ import org.scalatest.FunSuite
   **/
 class P17Test extends FunSuite {
 
-  var root1: TreeNode = _
-  var root2: TreeNode = _
-
-  root1 = new TreeNode(8)
   val node1 = new TreeNode(7)
   val node2 = new TreeNode(2)
+
+  root1 = new TreeNode(8)
   val node3 = new TreeNode(9)
   val node4 = new TreeNode(2)
   val node5 = new TreeNode(4)
   val node6 = new TreeNode(7)
   val a = new TreeNode(9)
   val b = new TreeNode(2)
+  var root1: TreeNode = _
+  var root2: TreeNode = _
   root1.left = node1
   root1.right = node2
   node1.left = node3

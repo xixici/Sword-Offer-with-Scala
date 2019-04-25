@@ -15,10 +15,10 @@ public class Q20 {
             Stack<Integer> stack = new Stack();
             int j = 0;
 
-            for(int i = 0; i < popA.length; ++i) {
+            for (int i = 0; i < popA.length; ++i) {
                 stack.push(pushA[i]);
 
-                while(j < popA.length && (Integer)stack.peek() == popA[j]) {
+                while (j < popA.length && (Integer) stack.peek() == popA[j]) {
                     stack.pop();
                     ++j;
                 }

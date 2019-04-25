@@ -10,7 +10,7 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P25Test extends FunSuite{
+class P25Test extends FunSuite {
   val rln = new RandomListNode(1)
   val a = new RandomListNode(2)
   val b = new RandomListNode(3)

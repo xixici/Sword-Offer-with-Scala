@@ -9,7 +9,7 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P27Test extends FunSuite{
+class P27Test extends FunSuite {
   val A = "123"
   test("P28Test") {
     val Expected = List("123", "132", "213", "231", "321", "312")

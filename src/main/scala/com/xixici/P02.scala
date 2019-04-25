@@ -7,7 +7,7 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P02 {
-  def replaceSpace( str: String) =  {
+  def replaceSpace(str: String) = {
     str.replace(" ", "%20")
   }
 }

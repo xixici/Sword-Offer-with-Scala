@@ -9,12 +9,12 @@ import org.scalatest.FunSuite
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P20Test extends FunSuite{
+class P20Test extends FunSuite {
   val stack = new P20
   stack.push(2)
   stack.push(3)
   stack.push(5)
-  test("P20Test"){
+  test("P20Test") {
     val Expected = 2
     val Actual = stack.min()
     assert(Actual === Expected)

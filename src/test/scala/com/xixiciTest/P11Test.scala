@@ -13,6 +13,6 @@ class P11Test extends FunSuite {
   test("P11Test") {
     val Expected = 1
     val Actual = P11.NumberOf1(4)
-    assert(Expected===Actual)
+    assert(Expected === Actual)
   }
 }
