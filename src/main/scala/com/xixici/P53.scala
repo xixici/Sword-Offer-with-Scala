@@ -7,17 +7,11 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P53 {
-  def matchPattern(str: Array[Char], pattern: Array[Char]):Boolean = {
-    if (str == null || pattern == null) {
-      return false
-    }
-    val strIndex = 0
-    val patternIndex = 0
-    matchCore(str, strIndex, pattern, patternIndex);
+  def isNumeric(str: Array[Char]): Boolean = {
+    val strOri = str.mkString("")
+    strOri.matches("[\\+-]?[0-9]*(\\.[0-9]*)?([eE][\\+-]?[0-9]+)?")
+
+
   }
 
-  def matchCore(chars: Array[Char], i: Int, chars1: Array[Char], i1: Int): Boolean = {
-
-    false  
-  }
 }
