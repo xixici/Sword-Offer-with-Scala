@@ -24,7 +24,7 @@ class P56Test extends FunSuite {
   b.next = c
   c.next = d
   d.next = e
-  test("P55Test") {
+  test("P56Test") {
     var Expected = Array(1, 2, 3, 5)
     var Actual = P56.deleteDuplication(head)
     val res = new ArrayBuffer[Int]
