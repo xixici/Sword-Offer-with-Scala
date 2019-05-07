@@ -7,7 +7,7 @@ package com.xixici.util
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 class TreeLinkNode(var data: Int) {
-  var left: TreeNode = _
-  var right: TreeNode = _
-  var next: TreeNode = _
+  var left: TreeLinkNode = _
+  var right: TreeLinkNode = _
+  var next: TreeLinkNode = _
 }
