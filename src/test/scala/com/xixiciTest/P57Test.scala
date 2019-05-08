@@ -1,10 +1,9 @@
 package com.xixiciTest
 
 import com.xixici.P57
-import com.xixici.util.ListNode
+import com.xixici.util.TreeLinkNode
 import org.scalatest.FunSuite
 
-import scala.collection.mutable.ArrayBuffer
 
 /**
   * Created by xixici
@@ -12,29 +11,53 @@ import scala.collection.mutable.ArrayBuffer
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
+/* d - b - h - e - i - a - f - c - g
+*        a
+*      /   \
+*     b     c
+*    / \   / \
+*   d  e  f  g
+*     / \
+*    h  i
+*    */
 class P57Test extends FunSuite {
-  // TODO:  
-//  
-//  val a = new ListNode(2)
-//  val b = new ListNode(3)
-//  val c = new ListNode(4)
-//  val d = new ListNode(4)
-//  val e = new ListNode(5)
-//  var head = new ListNode(1)
-//  head.next = a
-//  a.next = b
-//  b.next = c
-//  c.next = d
-//  d.next = e
-//  test("P57Test") {
-//    var Expected = Array(1, 2, 3, 5)
-//    var Actual = P57.TreeLinkNode(head)
-//    val res = new ArrayBuffer[Int]
-//    while (Actual != null) {
-//      res.append(Actual.data)
-//      Actual = Actual.next
-//    }
-//    assert(res.toArray === Expected)
+  val a = new TreeLinkNode(1)
+  val b = new TreeLinkNode(2)
+  val c = new TreeLinkNode(3)
+  val d = new TreeLinkNode(4)
+  val e = new TreeLinkNode(5)
+  val f = new TreeLinkNode(6)
+  val g = new TreeLinkNode(7)
+  val h = new TreeLinkNode(8)
+  val i = new TreeLinkNode(9)
+  a.left = b
+  a.right = c
+  b.left = d
+  b.right = e
+  b.next = a
+  e.left = h
+  e.right = i
+  e.next = b
+  c.left = f
+  c.right = g
+  c.next = a
+  d.next = b
+  h.next = e
+  i.next = e
+  f.next = c
+  g.next = c
+  test("P57Test") {
+    val Expected = f.data
+    val Actual = P57.TreeLinkNode(a).data
+
+    val Expected2 = b.data
+    val Actual2 = P57.TreeLinkNode(d).data
+
+    val Expected3 = h.data
+    val Actual3 = P57.TreeLinkNode(b).data
+    assert(Actual === Expected)
+    assert(Actual2 === Expected2)
+    assert(Actual3 === Expected3)
   }
 }
 
