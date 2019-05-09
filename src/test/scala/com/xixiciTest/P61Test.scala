@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.P60
+import com.xixici.{P60, P61}
 import com.xixici.util.TreeNode
 import org.scalatest.FunSuite
 
@@ -12,7 +12,7 @@ import scala.collection.mutable.ArrayBuffer
   * Project Name: sword-offer-scala-sbt
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
-class P60Test extends FunSuite {
+class P61Test extends FunSuite {
   val a = new TreeNode(1)
   val b = new TreeNode(2)
   val bb = new TreeNode(3)
@@ -24,11 +24,10 @@ class P60Test extends FunSuite {
   a.right = bb
   bb.left = d
   bb.right = c
-
-
-  test("P60Test") {
-    val Expected = ArrayBuffer(ArrayBuffer(1), ArrayBuffer(2, 3), ArrayBuffer(4, 5, 5, 4))
-    val Actual = P60.Print(a)
-    assert(Actual === Expected)
+  test("P61Test") {
+    val Expected1 = "1,2,4,$,$,5,$,$,3,5,$,$,4,$,$"
+    val Actual1 = P61.deserialize("1,2,4,$,$,5,$,$,3,5,$,$,4,$,$")
+    val Actual0 = P61.serialize(Actual1)
+    assert(Actual0 === Expected1)
   }
 }
