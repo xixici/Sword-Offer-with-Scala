@@ -7,5 +7,5 @@ package com.xixici
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P63 {
-  
+
 }
