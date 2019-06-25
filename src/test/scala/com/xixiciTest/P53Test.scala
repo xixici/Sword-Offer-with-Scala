@@ -1,6 +1,6 @@
 package com.xixiciTest
 
-import com.xixici.{P52, P53}
+import com.xixici.P53
 import org.scalatest.FunSuite
 
 /**

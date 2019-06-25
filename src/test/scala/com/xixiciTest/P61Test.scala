@@ -1,10 +1,8 @@
 package com.xixiciTest
 
-import com.xixici.{P60, P61}
+import com.xixici.P61
 import com.xixici.util.TreeNode
 import org.scalatest.FunSuite
-
-import scala.collection.mutable.ArrayBuffer
 
 /**
   * Created by xixici

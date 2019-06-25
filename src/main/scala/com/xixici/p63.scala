@@ -2,6 +2,7 @@ package com.xixici
 
 import java.util.Comparator
 import java.{util => ju}
+
 /**
   * Created by xixici
   * Date: 2019/5/13 
@@ -9,7 +10,7 @@ import java.{util => ju}
   * Project URL: https://github.com/xixici/sword-offer-scala
   **/
 object P63 {
-//Todo: 更换util
+
   val minHeap = new ju.PriorityQueue[Int](15)
   val maxHeap = new ju.PriorityQueue[Int](15, new Comparator[Int] {
     override def compare(o1: Int, o2: Int): Int = o2 - o1
