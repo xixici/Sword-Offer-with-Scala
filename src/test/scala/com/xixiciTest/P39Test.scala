@@ -31,7 +31,7 @@ class P39Test extends FunSuite {
   node4.left = node5
   node4.right = node6
   test("P39Test") {
-    val Expected = true
+    val Expected = false
     val Actual = P39.IsBalanced_Solution(root1)
     assert(Actual === Expected)
   }
